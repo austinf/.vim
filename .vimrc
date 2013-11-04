@@ -34,9 +34,6 @@ set scrolljump=1
 set scrolloff=3
 set gdefault
 
-"need to patch my font for this to work
-"let g:Powerline_symbols = 'fancy'
-
 call pathogen#infect()
 
 " when pasting don't replace yank buffer with what you have highlighted
@@ -54,6 +51,9 @@ nmap <silent> <F9> :bn <CR>
 nmap <silent> <F10> :bp <CR>
 nmap <silent> <F11> :ls <CR>
 nmap <silent> <F12> :ball <CR>
+
+let g:airline_left_sep=''
+let g:airline_right_sep=''
 
 """"""""""""""""""
 " Text Formatting
