@@ -46,6 +46,8 @@ vmap P "_dP
 " on space dehighlight
 noremap <silent> <Space> :silent noh<Bar>echo<CR>
 
+" Tagbar
+nmap <F8> :TagbarToggle<CR>
 
 " buffer switching
 nmap <silent> <F9> :bn <CR>
