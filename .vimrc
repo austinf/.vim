@@ -46,6 +46,9 @@ noremap <silent> <Space> :silent noh<Bar>echo<CR>
 " Tagbar
 nmap <F8> :TagbarToggle<CR>
 
+" Signify disable by default
+let g:signify_disable_by_default=1
+
 " buffer switching
 nmap <silent> <F9> :bn <CR>
 nmap <silent> <F10> :bp <CR>
