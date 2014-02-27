@@ -173,4 +173,6 @@ au BufRead,BufNewFile *.vapi            setfiletype vala
 " syntastic customizations
 let g:syntastic_php_checkers=['php']
 let g:syntastic_java_checkers=[]
+let g:syntastic_c_checkers=[]
+let g:syntastic_javascript_checkers=['jshint']
 
