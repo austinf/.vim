@@ -153,6 +153,8 @@ augroup END
 autocmd BufReadPre SConstruct set filetype=python
 autocmd BufReadPre SConscript set filetype=python
 
+au BufRead,BufNewFile *.json set filetype=javascript
+
 "Shell profile
 augroup shell
     au BufRead profile,bashrc,.profile,.bashrc,.bash_*,.kshrc,*.sh,*.ksh,*.bash,*.env,.login,.cshrc,*.csh,*.tcsh,.z*,zsh*,zlog* set formatoptions=croq sm sw=4 sts=4 cindent cinkeys='0{,0},!^F,o,O,e'
