@@ -178,3 +178,9 @@ let g:syntastic_java_checkers=[]
 let g:syntastic_c_checkers=[]
 let g:syntastic_javascript_checkers=['jshint']
 
+" ctrlp extensions
+let g:ctrlp_extensions = ['funky']
+nnoremap <Leader>f :CtrlPFunky<Cr>
+" narrow the list down with a word under cursor
+nnoremap <Leader>F :execute 'CtrlPFunky ' . expand('<cword>')<Cr>
+let g:ctrlp_funky_syntax_highlight = 1
