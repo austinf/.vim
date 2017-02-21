@@ -2,27 +2,13 @@
 """"""""""""""'
 " Misc stuff
 set exrc                        "Make sure we run the vimrc
-set secure                      "don't allow commandline executin in vimrc
 set nocompatible                "all vim features!
-set showcmd                     "show commands in statusline
-set nonumber                    "no line numbers at first
-"set fileformats=unix           " I want to see those ^M if I'm editing a dos file
-set confirm                     "Tell me if something fucks up
-set visualbell t_vb=            "Don't ring any bells
-set mouse=a                     "Use the mouse in all modes
-set title                       "Let VIM manage the term title
-set titlestring=%t\ %y\ %r\ %m  "Set a useful term title            
-set titleold=Terminal           "Get rid of that stupid flying message
-set suffixes=.bak,~,.swp,.o,.info,.aux,.log,.dvi,.bbl,.blg,.brf,.cb,.ind,.idx,.ilg,.inx,.out,.toc       "Don't tab complete this much
-set viminfo='20,\"50            "How much history/marks to store in viminfo
 set number                      "Show line numbers
 set showmode                    "Show editing mode in status bar
 set fmr={,}                     "Fold marker
 set fdm=marker                  "Fold method
 set nofen                       "But disable folding by default
 set path=.
-"lots of speed up, but no guarentees the file is actually on disk at exit
-set nofsync
 set ttyfast
 set noruler
 set laststatus=2
@@ -33,19 +19,6 @@ set wildmenu
 set scrolljump=1
 set scrolloff=3
 set gdefault
-
-" when pasting don't replace yank buffer with what you have highlighted
-vmap p "_dP
-vmap P "_dP
-
-" on space dehighlight
-noremap <silent> <Space> :silent noh<Bar>echo<CR>
-
-" buffer switching
-nmap <silent> <F9> :bn <CR>
-nmap <silent> <F10> :bp <CR>
-nmap <silent> <F11> :ls <CR>
-nmap <silent> <F12> :ball <CR>
 
 """"""""""""""""""
 " Text Formatting
@@ -71,27 +44,6 @@ set hlsearch        "highlight search matches
 set ignorecase      "for pattern matching
 set smartcase       "if I use uppercase, match case sensitive
 set incsearch       "show us matches immeadiatly
-
-
-"""""""""""""""
-"Mappings
-"
-set pastetoggle=<F4>
-
-map <C-J> <C-W>j<C-W>_
-map <C-K> <C-W>k<C-W>_
-map <C-L> <C-W>l<C-W>_
-map <C-H> <C-W>h<C-W>_
-
-nnoremap j gj
-nnoremap k gk
-
-"Toggle line nums
-nmap <silent> <F3> :set nu! <CR>
-
-map :W :w
-map :Q :q
-map :E :e
 
 "enable filetype detection
 filetype plugin indent on
