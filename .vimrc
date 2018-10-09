@@ -175,10 +175,10 @@ au BufRead,BufNewFile *.vapi            setfiletype vala
 au BufRead,BufNewFile *.bgs set ft=bgscript
 
 " syntastic customizations
-let g:syntastic_php_checkers=['php']
+"let g:syntastic_php_checkers=['php']
 let g:syntastic_java_checkers=[]
 let g:syntastic_c_checkers=[]
-let g:syntastic_javascript_checkers=['jshint']
+let g:syntastic_javascript_checkers=['eslint']
 
 " ctrlp extensions
 let g:ctrlp_extensions = ['funky']
