@@ -63,8 +63,9 @@ let g:airline_right_sep=''
 """"""""""""""""""
 
 set autoindent          "Auto indenting
+set smartindent
 set cindent             "auto un-indent close brackets
-set cinoptions=>4       "one tab only
+
 set tabstop=4           "Tab width
 set softtabstop=4       "Soft tabstop
 set shiftwidth=4        "how much to shift text when formatting
